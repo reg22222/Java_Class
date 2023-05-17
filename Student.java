@@ -1,34 +1,26 @@
-class Student{
+public class Student {
     private String name;
     private int grade;
-    /* 
-
-    public void setName(String n) {
-        name = n;
+    public Student(){}
+    public Student(String name){
+        this.name = name;
+    }
+    
+    public Student(String name, int grade){
+        this(name);
+        this.grade = grade;
     }
     public String getName() {
-        return name;
-    }
-    public void setGrade(int g) {
-        grade = g;
-    }
-    public int getGrade() {
-        return grade;
-    }*/
-    public String getName() {
-        return name;
+        return this.name;
     }
     public void setName(String name) {
         this.name = name;
     }
     public int getGrade() {
-        return grade;
+        return this.grade;
     }
     public void setGrade(int grade) {
         this.grade = grade;
-    }
-    public void print(){
-        System.out.println("학생의 이름은"+name+"이고"+grade+"학년입니다.");
     }
     
 }
