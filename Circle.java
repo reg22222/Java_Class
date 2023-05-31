@@ -1,18 +1,8 @@
 public class Circle {
-    private double radius;
-    public static double PI = 3.14;
-    
-    public Circle(){}
-
-    public Circle(double radius){
-        this.radius = radius;
+    protected double area(int r){
+        return 3.14 * r * r;
     }
-
-    public double computeArea(){
-        return PI*radius*radius;
+    protected double round(int r){
+        return 2* 3.14 * r;
     }
-    public double computePerimeter(){
-        return 2*PI*radius;
-    }
-
 }
