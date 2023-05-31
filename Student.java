@@ -1,26 +1,26 @@
 public class Student {
-    private String name;
-    private int grade;
+    String name;
+    String hakbun;
+    String phone;
+    String juso;
+    String major;
+
     public Student(){}
-    public Student(String name){
+    public Student(String name, String hakbun){
         this.name = name;
+        this.hakbun = hakbun;
     }
-    
-    public Student(String name, int grade){
-        this(name);
-        this.grade = grade;
+
+    public void study(){
+        System.out.println("공부하다.");
     }
-    public String getName() {
-        return this.name;
+    public void eat(){
+        System.out.println("식사하다.");
     }
-    public void setName(String name) {
-        this.name = name;
+    public void test(){
+        System.out.println("시험보다.");
     }
-    public int getGrade() {
-        return this.grade;
+    public void extra_act(){
+        System.out.println("동아리 활동하다.");
     }
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
-    
 }
